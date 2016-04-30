@@ -1,0 +1,15 @@
+
+* {
+    outline: 1px dashed #ccc;
+}
+
+body {
+    font: 16px 'Lato', sans-serif;
+    margin: 0;
+}
+
+header {
+    outline: 2px solid red;
+    width: 100%;
+}
+

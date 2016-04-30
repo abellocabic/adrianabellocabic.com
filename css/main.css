@@ -1,0 +1,784 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Adriana Bello-Cabic's custom styles
+   ========================================================================== */
+
+
+body {
+    font: 16px 'Lato', sans-serif;
+    margin: 0;
+}
+
+/*============= HEADER ================*/
+
+header {
+    width: 100%;
+    margin-top: 0px;
+    padding: 30px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+/*Eventually, you're going to want to change. Put the position
+fixed, top 1. Then create a second class to the frist div grand
+and put the margin-top equal to the height of the header.*/
+
+.headerLeft {
+    width: 49%;
+    display: inline-block;
+    height: 4rem;
+}
+
+.title {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+    width: 282px;
+    clear: right;
+    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 250px;
+    color: #000;
+}
+
+#btnMenu {
+    display: none;
+}
+
+nav {
+    width: 50%;
+    height: 4rem;
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+}
+
+.navUl {
+    margin: 0;
+    padding: 7px 0;
+    text-align: center;
+}
+
+.navLi {
+    list-style: none;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    height: auto;
+    line-height: 3rem;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.navLi:first-child {
+    line-height: 1rem;
+    padding: 8px 0;
+}
+
+a {
+    font-weight: 700;
+    color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    font-size: 1.2rem;
+}
+
+
+
+/*============ GENERAL ================*/
+.grand {
+    width: 100%;
+    padding: 70px 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.equal {
+    overflow: hidden;
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.fiftyLeft {
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    text-align: justify;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fiftyRight {
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    text-align: justify;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+h2 {
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #1A237E;
+}
+
+/*============== ABOUT ME ============*/
+
+.fiftyRightP {
+    display: block;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.fiftyRightP:first-child {
+    padding: 0;
+}
+
+.fiftyRightS {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.imageLeft {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.h3Left {
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #1A237E;
+    text-align: center;
+}
+
+.user {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 50%;
+}
+
+ .fiftyRight>button {
+    display: none;
+ }
+
+/*==============SEPARATOR =======*/
+
+.separator {
+    height: 150px;
+    width: 100%;
+}
+
+.alpha {
+    background-color:  #651FFF;
+}
+
+.beta {
+    background-color:  #7C4DFF;
+}
+
+.gamma {
+    background-color:  #E65100;
+}
+
+.zeta {
+    background-color: #006064;
+}
+
+.separatorh2 {
+    margin: 0;
+    padding:0;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 150px;
+
+}
+
+
+/*==================== ICONS EXPERIENCE PROFESSIONNELLE =============*/
+
+figure {
+    width: 120px;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+    margin: 63px;
+    text-align: center;
+    vertical-align: top;
+}
+
+figure:nth-child(2){
+    margin: 63px 0;
+}
+
+.centerIcons {
+    text-align: center;
+}
+
+.onethird {
+    width: 100px;
+}
+
+.iconHolder {
+    overflow: hidden;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.fa-trophy {
+    padding: 0 10px;
+}
+
+/*=============== Center Text ========*/
+.withSubtitle {
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #1A237E;
+}
+
+.pCenter {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #1A237E;
+    text-align: center;
+}
+
+/*=============== CV TEXT ==============*/
+.cvUl {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.cvLiTitle {
+    list-style: none;
+    padding-bottom: 0;
+}
+
+.boldLiTitle {
+    font-size: 1.4rem;
+}
+
+.cvLiPlace {
+    list-style: none;
+    font-style: italic;
+}
+
+.cvLiDate {
+    padding-bottom: 5px; 
+}
+
+.cvLi {
+    list-style: none;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.cvUlTasks {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.cvLiTasks {
+    list-style-image: url('../img/checkicon.png');
+    padding-bottom: 5px;
+    font-size: 1rem;
+}
+
+/*Deuxiume classe pour espacier les lignes*/
+.spaced {
+    padding-bottom: 40px;
+}
+
+/*=========== COMPETENCES =======*/
+
+.competencesUl {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+    text-align: left;
+}
+
+.competenceLi {
+    list-style: none;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+.competenceP {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+.competenceStars { 
+    padding-left: 10px;
+    display: inline-block;
+}
+
+/*============= contact =============*/
+
+input {
+    width: 100%;
+    display: block;
+    height: 40px;
+    border: 1px solid black;
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #689F38;
+    border-radius: 2px;
+    background-color: #689F38;
+    display: block;
+    margin: 10px auto;
+    color: #fff;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.contactP {
+    text-align: center;
+}
+
+.contactA {
+    text-align: center;
+    display: block;
+}
+/*================== FOOTER ============*/
+
+footer {
+    padding: 30px 0;
+    background-color: #222;
+    padding: 30px;
+}
+
+.footerH1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footerP {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 480px), only screen 
+    and (min-device-width: 320px)
+      and (max-device-width: 480px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+
+    .fiftyRight {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        text-align: justify;
+        padding: 0;
+        box-sizing: border-box;
+        vertical-align: middle;
+    } 
+
+    .fiftyLeft {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        text-align: justify;
+        padding: 0;
+        box-sizing: border-box;
+    } 
+
+    .imageLeft {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /*=== HEADER AND NAV ===*/
+
+    header {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-top: 0px;
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+        background-color: #f5f5f5;
+        box-shadow: 2px 2px 2px #ccc;
+    }
+
+    .headerLeft {
+        margin: 0;
+        width: 100%;
+        display: block;
+        height: 4rem;
+    }
+
+    .title {
+        margin: 0;
+        padding-top: 18px;
+        font-size: 1.5rem;
+        font-weight: 300;
+        display: block;
+        width: 100%;
+        color: #000;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .subtitle {
+        margin: 0;
+        padding: 0;
+        display: block;
+        text-align: center;
+        width: 100%;
+        color: #000;
+    }
+
+    #btnMenu {
+        display: block;
+        margin: 20px auto;
+        padding: 0;
+        width: 60%;
+        max-width: 260px;
+        height: 40px;
+        line-height: 30px;
+        border: 1px solid #F50057;
+        background-color: #F50057;
+        box-shadow: 2px 2px 2px #ccc;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+    }
+
+    nav {
+        width: 60%;
+        max-width: 260px;
+        height: auto;
+        display: block;
+        vertical-align: middle;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .navUl {
+        margin: 0;
+        padding: 0 0 10px;
+        text-align: center;
+        display: none;
+    }
+
+    .navLi {
+        margin: 2px 0;
+        list-style: none;
+        display: block;
+        border: 1px solid #ccc;
+        background-color: #eee;
+        box-shadow: 1px 1px 1px #ccc;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        line-height: 3rem;
+        vertical-align: middle;
+        font-size: 1rem;
+    }
+
+    .navLi:first-child {
+        line-height: 3rem;
+        padding: 0;
+    }
+
+    a {
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #000;
+    }
+
+    /*=== A PROPOS === */
+
+    .user {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fiftyRight>button {
+        display: block;
+        margin: 20px auto;
+        padding: 0;
+        width: 200px;
+        height: 40px;
+        line-height: 30px;
+        border: 1px solid #F50057;
+        background-color: #F50057;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+    }
+
+    .fiftyRightP {
+        display: none;
+    }
+
+    /*=== ICONS EXPERIENCE PROFESSIONNELLE === */
+
+    figure {
+       display: none;
+    }
+
+    .withSubtitle:first-child {
+        padding-top: 75px;
+    }
+
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
