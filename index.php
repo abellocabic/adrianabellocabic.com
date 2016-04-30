@@ -1,3 +1,8 @@
+<?php
+
+	include 'db/connection.php';
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -8,8 +13,7 @@
 	<meta name="keywords" content="">
 	<title>Adriana Bello-Cabic</title>
 
-	<!-- FAVICON -->
-	<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+	<link rel=”icon” href=”img/favicon.ico”> 
 
 	<!-- FONTS and ICONS -->
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -20,17 +24,6 @@
 
 	<!-- CSS STYLE -->
 	<link rel="stylesheet" href="css/main.css">
-
-	<!-- GOOGLE ANALYTICS -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-75937914-1', 'auto');
-		ga('send', 'pageview');
-	</script>
 
 </head>
 <body>
@@ -225,15 +218,67 @@
 				<a class="contactA" href="mailto:abellocabic@gmail.com">abellocabic@gmail.com</a>
 
 			</div>
+	<!--  -->
+	<?php 
+	//Process for contact:
+
+	$contact_errors = array();
+	
+	if (isset($_POST['btnContactSubmit']))
+	{
+		foreach ($_POST as $key => $value) 
+		{
+			if ($key == "btnContactSubmit")
+			{
+				continue;
+			}
+			elseif (empty($_POST[$key]))
+			{
+				$contact_errors[] = "Vous devez remplir le champs : ".$key;
+			}
+		}	
+		if (empty($_POST['contact_message']))
+		{
+			$contact_error[] = "Pas de message";
+		}
+		else
+		{
+			header('location: https://www.google.com');
+		}
+	}
+
+
+
+
+		// $stmt=$dbh->prepare("INSERT INTO `messages`(`contact_firstname`, `contact_lastname`, `contact_email`, `contact_message`) VALUES (:contact_firstname, :contact_lastname, :contact_email, :contact_message)");
+		// $stmt->bindValue(":contact_firstname", $contact_firstname, PDO::PARAM_STR);
+		// $stmt->bindValue(":contact_lastname", $contact_lastname, PDO::PARAM_STR);
+		// $stmt->bindValue(":contact_email", $contact_email, PDO::PARAM_STR);
+		// $stmt->bindValue(":contact_message", $contact_message, PDO::PARAM_STR);
+		// $stmt->execute();
+
+		// echo "message sent";	
+	?>
+	<!--  -->
 			<div class="fiftyRight">
 				<p>Contactez-Moi</p>
-				<form action="">
+				<form method="POST" name="formContact">
 					<fieldset>
-						<input type="text" placeholder="Nom" required="">
-						<input type="text" placeholder="Prénom" required="">
-						<input type="email" placeholder="E-Mail" required="">
-						<textarea name="" id="" cols="30" rows="10">Votre message ici</textarea>
-						<button>Envoyer</button>
+
+						<ul class="contact_errors">
+							<?php
+							foreach ($contact_errors as $key => $value) 
+							{
+								echo "<li>".$value."</li>";								
+							}
+							?>
+						</ul>
+
+						<input type="text" placeholder="Prénom" id="contact_firstname" name="contact_firstname">
+						<input type="text" placeholder="Nom" id="contact_lastname" name="contact_lastname">
+						<input type="email" placeholder="E-Mail" id="contat_email" name="contact_email">
+						<textarea name="contact_message" id="contact_message" placeholder="something" ></textarea>
+						<button name="btnContactSubmit" value="btnContactSubmit">Envoyer</button>
 					</fieldset>
 				</form>
 			</div>
@@ -247,6 +292,7 @@
 			<p class="footerP">Web Développeuse</p>
 			<a href="tel://33-6-26-37-25-12"><p class="footerP">06 26 37 25 12</p></a> 
 			<a href="http://www.adrianabellocabic.com"><p class="footerP">www.adrianabellocabic.com </p></a>
+			<a href="admin/login.php"><i class="fa fa-fort-awesome fa-6"></i></a>
 
 	</footer>
 

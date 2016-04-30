@@ -153,6 +153,16 @@ a:hover {
     font-size: 1.2rem;
 }
 
+.fa-home {
+    padding-right: 10px;
+}
+
+.fa-fort-awesome {
+    color: #eee;
+    display: block;
+    text-align: right;
+    margin-right: 30px;
+}
 
 
 /*============ GENERAL ================*/
@@ -422,15 +432,19 @@ input {
     width: 100%;
     display: block;
     height: 40px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 15px 0;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
 textarea {
     width: 100%;
-    border: 1px solid #000;
+    min-height: 200px;
+    border: 2px solid #000;
     box-sizing: border-box;
+    font-size: 1rem;
+
 }
 
 button {

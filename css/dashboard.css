@@ -1,0 +1,13 @@
+* {
+	outline: 1px dashed #ccc;
+}
+
+
+
+/*=== FOOTER ===*/
+footer {
+	display: block;
+	width: 100%;
+	position: fixed;
+	bottom: 1px;
+}
