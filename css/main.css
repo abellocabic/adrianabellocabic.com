@@ -1,161 +1,14 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
 /* ==========================================================================
    Adriana Bello-Cabic's custom styles
    ========================================================================== */
 
-
 body {
-    font: 16px 'Lato', sans-serif;
-    margin: 0;
-}
-
-/*============= HEADER ================*/
-
-header {
-    width: 100%;
-    margin-top: 0px;
-    padding: 30px;
-    overflow: hidden;
-    border-bottom: 1px solid #ccc;
-    background-color: #f5f5f5;
-    box-shadow: 2px 2px 2px #ccc;
-}
-
-/*Eventually, you're going to want to change. Put the position
-fixed, top 1. Then create a second class to the frist div grand
-and put the margin-top equal to the height of the header.*/
-
-.headerLeft {
-    width: 49%;
-    display: inline-block;
-    height: 4rem;
-}
-
-.title {
-    margin: 0;
-    padding-top: 10px;
-    font-size: 1.5rem;
-    font-weight: 400;
-    display: block;
-    width: 282px;
-    clear: right;
-    color: #000;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-.subtitle {
+    font: 16px 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    display: inline-block;
-    width: 250px;
-    color: #000;
+
 }
 
-#btnMenu {
-    display: none;
-}
-
-nav {
-    width: 50%;
-    height: 4rem;
-    display: inline-block;
-    float: right;
-    vertical-align: middle;
-}
-
-.navUl {
-    margin: 0;
-    padding: 7px 0;
-    text-align: center;
-}
-
-.navLi {
-    list-style: none;
-    display: inline-block;
-    width: 120px;
-    text-align: center;
-    height: auto;
-    line-height: 3rem;
-    vertical-align: middle;
-    font-size: 0.9rem;
-}
-
-.navLi:first-child {
-    line-height: 1rem;
-    padding: 8px 0;
-}
-
-a {
-    font-weight: 700;
-    color: #000;
-}
-
-a:visited {
-    color: #000;
-}
-
-a:hover {
-    font-size: 1.2rem;
-}
-
-
-
-/*============ GENERAL ================*/
 .grand {
     width: 100%;
     padding: 70px 0;
@@ -170,6 +23,10 @@ a:hover {
     box-sizing: border-box;
     background-color: #fff;
     overflow: hidden;
+}
+
+.upper-buffer {
+    margin-top: 20px; 
 }
 
 .equal {
@@ -197,39 +54,140 @@ a:hover {
     box-sizing: border-box;
     vertical-align: middle;
 }
+/*============= HEADER ================*/
 
-h2 {
-    margin: 0;
+header {
+    width: 100%;
+    margin-top: 0px;
     padding: 30px;
-    text-align: center;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #1A237E;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #ccc;
 }
+
+/*Eventually, you're going to want to change. Put the position
+fixed, top 1. Then create a second class to the frist div grand
+and put the margin-top equal to the height of the header.*/
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font: 3rem 'Montserrat';
+    font-weight: 400;
+    display: block;
+    width: 282px;
+    color: #162B3D;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.subtitle {
+    margin: 5px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 250px;
+    color: #000;
+    text-align: center;
+}
+
+#btnMenu {
+    display: none;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+    height: 4rem;
+}
+
+.inline-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.inline-menu>li {
+    list-style: none;
+    display: inline-flex;
+    padding: 20px 30px;
+}
+
+.inline-menu>li>a {
+    color: #000;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+a {
+    font-weight: 700;
+    color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    font-size: 1.2rem;
+    color: #162B3D;
+}
+
+
+
+
 
 /*============== ABOUT ME ============*/
 
-.fiftyRightP {
+#bonjour {
+    text-align: center;
+}
+
+.apropos-p, .apropos-strg {
+    font-family: 'Montserrat';
+}
+
+.apropos-p {
     display: block;
     padding: 10px 0;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
-}
-
-.fiftyRightP:first-child {
-    padding: 0;
-}
-
-.fiftyRightS {
-    font-size: 1rem;
-    font-weight: 700;
 }
 
 .imageLeft {
     width: 50%;
     float: left;
     overflow: hidden;
+}
+
+.apropos-p:first-child {
+    padding: 0;
+}
+
+.apropos-strg {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .h3Left {
@@ -247,7 +205,7 @@ h2 {
     border-radius: 50%;
 }
 
- .fiftyRight>button {
+ #btnApropos {
     display: none;
  }
 
@@ -256,14 +214,19 @@ h2 {
 .separator {
     height: 150px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .alpha {
     background-color:  #651FFF;
 }
 
-.beta {
-    background-color:  #7C4DFF;
+.bleu {
+    background-color: #8CABD9;
+    color: #fff;
+    border-top: 2px solid #8CABD9;
+    border-bottom: 2px solid #8CABD9;
+
 }
 
 .gamma {
@@ -275,50 +238,17 @@ h2 {
 }
 
 .separatorh2 {
-    margin: 0;
+    margin: 0 0 10px;
     padding:0;
     text-align: center;
     font-weight: 300;
     text-transform: uppercase;
-    color: #fff;
     line-height: 150px;
 
 }
 
 
 /*==================== ICONS EXPERIENCE PROFESSIONNELLE =============*/
-
-figure {
-    width: 120px;
-    height: auto;
-    overflow: hidden;
-    display: inline-block;
-    margin: 63px;
-    text-align: center;
-    vertical-align: top;
-}
-
-figure:nth-child(2){
-    margin: 63px 0;
-}
-
-.centerIcons {
-    text-align: center;
-}
-
-.onethird {
-    width: 100px;
-}
-
-.iconHolder {
-    overflow: hidden;
-    width: 800px;
-    margin: 0 auto;
-}
-
-.fa-trophy {
-    padding: 0 10px;
-}
 
 /*=============== Center Text ========*/
 .withSubtitle {
@@ -328,7 +258,7 @@ figure:nth-child(2){
     text-align: center;
     font-weight: 300;
     text-transform: uppercase;
-    color: #1A237E;
+    color: #162B3D;
 }
 
 .pCenter {
@@ -342,6 +272,14 @@ figure:nth-child(2){
 }
 
 /*=============== CV TEXT ==============*/
+
+.phrase-milieu {
+    color: #162B3D;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
 .cvUl {
     margin: 0;
     padding: 0 10px;
@@ -362,6 +300,7 @@ figure:nth-child(2){
 }
 
 .cvLiDate {
+    list-style: none;
     padding-bottom: 5px; 
 }
 
@@ -651,134 +590,5 @@ footer {
         display: none;
     }
 
-    /*=== ICONS EXPERIENCE PROFESSIONNELLE === */
-
-    figure {
-       display: none;
-    }
-
-    .withSubtitle:first-child {
-        padding-top: 75px;
-    }
 
 
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}

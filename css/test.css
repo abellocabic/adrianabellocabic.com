@@ -1,15 +1,103 @@
-
 * {
-    outline: 1px dashed #ccc;
+	outline: 1px dashed #ccc;
 }
 
+/* === GENERAL === */
 body {
-    font: 16px 'Lato', sans-serif;
-    margin: 0;
+	font: 16px 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+
 }
 
-header {
-    outline: 2px solid red;
-    width: 100%;
+.completeBuffer {
+	margin: 10px;
 }
+
+.top-bottom-buffer {
+	margin: 10px auto;
+}
+
+.top-bottom-padding {
+	padding: 50px 0;
+}
+
+.flex-spacebetween {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.complete {
+	width: 100%;
+}
+
+.blue {
+	background-color: #2EAEF7;
+}
+
+.white {
+	color: #fff;
+}
+
+/* == HEADER ET NAV == */
+header {
+	width: 100%;
+	padding: 15px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#logo {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+#logo>h2 {
+	font: 4rem 'Montserrat';
+	padding: 0;
+	margin: 0;
+	font-size: 3.5rem;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.inline-menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.inline-menu>li {
+	list-style: none;
+	display: inline-flex;
+	padding: 20px 30px;
+}
+
+.inline-menu>li>a {
+	color: #000;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
